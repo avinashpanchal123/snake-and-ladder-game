@@ -127,3 +127,46 @@ body {
     left: 46%;
     transform: rotate(-30deg);
   }
+
+
+/* style for dice container */
+
+.dice_container{
+  width: 50%;
+  height: 100%;
+}
+
+.dice_wrapper{
+  width:  50%;
+  height:  30%;
+  margin: auto;
+  border: 2px solid gray;
+}
+
+.dice_wrapper div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.dice_wrapper div:nth-child(2){
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.players{
+  cursor: pointer;
+}
+
+.dice_img_div{
+  width: 30%;
+  height: 15vh;
+  border: 2px solid black;
+  visibility: hidden;
+}
+
+.dice_img_div img{
+  width: 100%;
+  
+}
