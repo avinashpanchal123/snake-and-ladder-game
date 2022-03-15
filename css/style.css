@@ -181,4 +181,6 @@ body {
   background-color: red;
   border-radius: 50%;
   transform: translate();
+  text-align: center;
+  /* transition: 2s; */
 }
