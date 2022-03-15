@@ -1,34 +1,129 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: "Arvo", cursive;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Arvo", cursive;
 }
 
-.main_container{
-    width: 100%;
-    height: 100vh;
-    border: 2px solid black;
-    display: flex;
+body {
+  position: relative;
 }
 
-#board_container{
-    width:  50%;
-    height: 100%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
+.main_container {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
 }
 
-.rows{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    /* border: 2px solid black; */
+#board_container {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
-.cell{
-    width: 10%;
-    height: 100%;
-    border: 2px solid blue;
+.rows {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  /* border: 2px solid black; */
 }
+
+.cell {
+  width: 10%;
+  height: 100%;
+  border: 2px solid blue;
+}
+
+.snake {
+  position: absolute;
+  transform-origin: center bottom;
+}
+
+#solong {
+  width: 4.5%;
+  top: 1%;
+  left: 1%;
+  transform: rotate(15deg);
+  z-index: 3;
+}
+
+#long {
+  width: 4.3%;
+  top: 8%;
+  left: 25%;
+  transform: rotate(42deg);
+}
+
+#medium {
+  width: 12%;
+  top: 63%;
+  left: 12%;
+  transform: rotate(15deg);
+}
+
+#leftSide {
+  width: 6.5%;
+  top: 4%;
+  left: 11%;
+  transform: rotate(-33deg);
+  z-index: 5;
+}
+
+#medium2 {
+  width: 15%;
+  top: 17%;
+  left: 31%;
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+
+
+.ladder{
+    position: absolute;
+    transform-origin: center bottom;
+}
+
+
+
+#big_ladder {
+    width: 3%;
+    height: 75%;
+    top: 1.5%;
+    left: 36%;
+    transform: rotate(-35deg);
+  }
+  
+  #small_ladder {
+    width: 3%;
+    height: 35%;
+    top: 60%;
+    left: 15%;
+    transform: rotate(70deg);
+  }
+  
+  #medium_ladder {
+    width: 2.4%;
+    height: 37%;
+    top: 0%;
+    left: 31%;
+    transform: rotate(37deg);
+  }
+  
+  #medium_ladder01 {
+    width: 2.4%;
+    height: 38%;
+    top: 27%;
+    left: 12%;
+    transform: rotate(-35deg);
+  }
+  
+  #small_ladder01 {
+    width: 3%;
+    height: 25%;
+    top: 40%;
+    left: 46%;
+    transform: rotate(-30deg);
+  }

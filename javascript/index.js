@@ -16,14 +16,14 @@ for (let r = 1; r < 11; r++) {
        cell.classList.add("cell");
        if( r % 2 == 0){
            cell.setAttribute("id", even_row)
-           cell.innerHTML = even_row++
+           cell.innerText = even_row++
            if( c % 2 == 0){
                cell.style.background = "pink"
            }
        }
        else{
            cell.setAttribute("id",odd_row)
-           cell.innerHTML = odd_row--;
+           cell.innerText = odd_row--;
            if( c % 2 != 0){
             cell.style.background = "orange"
         }
