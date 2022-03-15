@@ -40,29 +40,6 @@ for (let r = 1; r < 11; r++) {
 }
 
 
-// here is code for handling dice 
-
-let dice_img_div = document.querySelector(".dice_img_div")
-
-let dice1 = document.querySelector("#p1_dice");
-let dice2 = document.querySelector("#p2_dice");
-let player1 = document.getElementById("player1")
-
-player1.onclick = ()=>{
-    Decision()
-}
-
-function Decision() {
-  let d1 = Math.floor(Math.random() * 6) +1;
-  let d2 = Math.floor(Math.random() * 6) + 1;
-  let timer = setTimeout(() => {
-    dice1.src = "../images/dice/dice" + d1 + ".png";
-    dice2.src = "./images/dice/dice" + d2 + ".png";
-    dice_img_div.style.visibility = "visible"
-  }, 500);
-
- 
-}
 
 
 

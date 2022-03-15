@@ -32,7 +32,7 @@ body {
 }
 
 .cell {
-  width: 10%;
+  width: 3.8rem;
   height: 100%;
   border: 2px solid blue;
 }
@@ -169,4 +169,16 @@ body {
 .dice_img_div img{
   width: 100%;
   
+}
+
+
+#p1{
+  position: absolute;
+  left: 1rem;
+  top : 91%;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate();
 }
