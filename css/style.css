@@ -16,8 +16,18 @@ body {
   display: flex;
 }
 
+.board_player_wrapper{
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 35rem;
+  height: 35rem;
+  border: 2px solid black;
+  position: relative;
+}
+
 #board_container {
-  width: 50%;
+  
+  width: 100%;
   height: 100%;
   border: 1px solid red;
   display: flex;
@@ -26,13 +36,13 @@ body {
 
 .rows {
   width: 100%;
-  height: 10%;
+  height: 4rem;
   display: flex;
   /* border: 2px solid black; */
 }
 
 .cell {
-  width: 3.8rem;
+  width: 4rem;
   height: 100%;
   border: 2px solid blue;
 }
@@ -43,39 +53,39 @@ body {
 }
 
 #solong {
-  width: 4.5%;
-  top: 1%;
-  left: 1%;
+  width: 3.4rem;
+  top: 1rem;
+  left: 1.5rem;
   transform: rotate(15deg);
   z-index: 3;
 }
 
 #long {
-  width: 4.3%;
-  top: 8%;
+  width: 3.2rem;
+  top: 5rem;
   left: 25%;
-  transform: rotate(42deg);
+  transform: rotate(38deg);
 }
 
 #medium {
-  width: 12%;
-  top: 63%;
-  left: 12%;
+  width: 10rem;
+  top: 23rem;
+  left: 9rem;
   transform: rotate(15deg);
 }
 
 #leftSide {
-  width: 6.5%;
-  top: 4%;
-  left: 11%;
+  width: 5rem;
+  top: 2.5rem;
+  left: 9rem;
   transform: rotate(-33deg);
   z-index: 5;
 }
 
 #medium2 {
-  width: 15%;
-  top: 17%;
-  left: 31%;
+  width: 11rem;
+  top: 7rem;
+  left: 23rem;
   transform: rotate(-30deg);
   z-index: 2;
 }
@@ -89,42 +99,42 @@ body {
 
 
 #big_ladder {
-    width: 3%;
-    height: 75%;
-    top: 1.5%;
-    left: 36%;
+    width: 2.5rem;
+    height: 25rem;
+    top: 2rem;
+    left: 26rem;
     transform: rotate(-35deg);
   }
   
   #small_ladder {
-    width: 3%;
-    height: 35%;
-    top: 60%;
-    left: 15%;
+    width: 2.5rem;
+    height: 11rem;
+    top: 23.5rem;
+    left: 12rem;
     transform: rotate(70deg);
   }
   
   #medium_ladder {
-    width: 2.4%;
-    height: 37%;
-    top: 0%;
-    left: 31%;
+    width: 2.4rem;
+    height: 13rem;
+    top: 1rem;
+    left: 22rem;
     transform: rotate(37deg);
   }
   
   #medium_ladder01 {
-    width: 2.4%;
-    height: 38%;
-    top: 27%;
-    left: 12%;
+    width: 2.4rem;
+    height: 13rem;
+    top: 11rem;
+    left: 9rem;
     transform: rotate(-35deg);
   }
   
   #small_ladder01 {
-    width: 3%;
-    height: 25%;
-    top: 40%;
-    left: 46%;
+    width: 2.5rem;
+    height: 9rem;
+    top: 15.5rem;
+    left: 33.5rem;
     transform: rotate(-30deg);
   }
 
@@ -174,10 +184,10 @@ body {
 
 #p1{
   position: absolute;
-  left: 1rem;
-  top : 91%;
-  width: 2.4rem;
-  height: 2.4rem;
+  left: 2rem;
+  top : 33rem;
+  width: 2rem;
+  height: 2rem;
   background-color: red;
   border-radius: 50%;
   transform: translate();

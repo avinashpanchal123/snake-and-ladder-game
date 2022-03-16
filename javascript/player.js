@@ -13,8 +13,8 @@ player1.onclick = () => {
 };
 
 function Decision() {
-    // let d1 = Math.floor(Math.random() * 6) +1;
-    let d1 = 1;
+    let d1 = Math.floor(Math.random() * 6) +1;
+    // let d1 = 1;
     
   let d2 = Math.floor(Math.random() * 6) + 1;
   let timer = setTimeout(() => {
@@ -42,146 +42,156 @@ var positionY = 0;
 
 function handlePosition(moves_right) {
   for (let i = 0; i < moves_right; i++) {
-    positionX = positionX + 3.8;
-    if (positionX < 38) {
-      p1.style.transform = `translate(${positionX}rem, ${positionY}vh)`;
+    positionX = positionX + 3.5;
+    if (positionX < 35) {
+      p1.style.transform = `translate(${positionX}rem, ${positionY}rem)`;
     } else {
-      positionX = 34.2;
-      positionY = positionY - 10;
-      p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+      positionX = 31.5;
+      positionY = positionY - 3.5;
+      p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
       flag = !flag;
       handlePosition1(moves_right - i - 1);
       break;
     }
   }
-//    alert([positionX, 'I am first']);
+  //  alert([positionX, positionY]);
 
-  if (positionY == 0 && positionX == (3 * 3.8)) {
+  if (positionY == 0 && positionX == 10.5) {
     small_ladder();
-
-  } else if (positionY == -20 && positionX == 26.6) {
+  } 
+  else
+   if (positionY == -7 && positionX == 24.5) {
     big_ladder();
   }
-  else if( positionX == 22.8 && positionY == -60){
+  else
+   if( positionX == 21 && positionY == -21){
     medium_ladder()
   }
-  else if( positionX == 0 && positionY == -80){
+  else
+   if( positionX == 0 && positionY == -28){
     leftSide_snake()
   }
 
-}
+ }
 
 function handlePosition1(moves_left) {
   for (let i = 0; i < moves_left; i++) {
     if (positionX > 0) {
-      positionX = positionX - 3.8;
-      p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+      positionX = positionX - 3.5;
+      p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     } else {
       flag = true;
-      positionY = positionY - 10;
-      p1.style.transform = `translateY(${positionY}vh)`;
+      positionY = positionY - 3.5;
+      p1.style.transform = `translateY(${positionY}rem)`;
       positionX = 0;
       handlePosition(moves_left - i - 1);
       break;
     }
   }
 
-//   alert([positionX, "I am second"])
-  if( positionX == 7.599999999999999 && positionY == -30){
+  // alert([positionX, positionY])
+
+
+  if( positionX == 7 && positionY == -10.5){
     medium_ladder01()
   }
-  else if( positionX == 34.2 && positionY == -30){
+  else 
+  if( positionX == 31.5 && positionY == -10.5){
     small_ladder01()
   }
-  else if( positionX == 11.399999999999999 && positionY == -30){
+  else
+   if( positionX == 10.5 && positionY == -10.5){
     medium_snake()
   }
-  else if( positionX == 34.2 && positionY == -70){
+  else
+   if( positionX == 31.5 && positionY == -24.5){
       long_snake()
   }
-  else if( positionX == 7.599999999999999 && positionY == -90){
+  else 
+  if( positionX == 7 && positionY == -31.5){
       soLong_snake()
   }
-  else if( positionX == 19 && positionY == -70){
+  else
+   if( positionX == 17.5 && positionY == -24.5){
     medium2_snake()
   }
 }
 
 function small_ladder() {
-  positionY = positionY - 10;
-  positionX = positionX + 11.4;
-  p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+  positionY = positionY - 3.5;
+  positionX = positionX + 10.5;
+  p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
   flag = false;
 }
 
 function big_ladder() {
-  positionX = positionX - 15.2;
-  positionY = positionY - 60;
-  p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+  positionX = positionX - 14;
+  positionY = positionY - 21;
+  p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
   flag = true;
 }
 
 
 function medium_ladder01(){
     // alert("I am called")
-    positionX = positionX - 7.6;
-    positionY = positionY - 30;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX - 7;
+    positionY = positionY - 10.5;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = true;
 }
 
 
 function medium_ladder(){
-    positionX = positionX + 7.6;
-    positionY = positionY - 30;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX + 7;
+    positionY = positionY - 10.5;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = false;
 }
 
 
 function small_ladder01(){
-    positionX = positionX - 3.8;
-    positionY = positionY - 20;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX - 3.5;
+    positionY = positionY - 7;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = false;
 }
 
 
 function medium_snake(){
-    positionX = positionX -3.8;
-    positionY = positionY + 30;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX -3.5;
+    positionY = positionY + 10.5;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = true;
 }
 
 function long_snake(){
     alert("I am called")
-    positionX = positionX - 15.2;
-    positionY = positionY + 50;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX - 14;
+    positionY = positionY + 17.5;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = true;
 }
 
 
 function soLong_snake(){
   
-    positionX = positionX - 7.6;
-    positionY = positionY + 80;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX - 7;
+    positionY = positionY + 28;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = false;
 }
 
 
 function leftSide_snake(){
-    positionX = positionX + 7.6;
-    positionY = positionY + 30;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX + 7;
+    positionY = positionY + 10.5;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = false;
 }
 
 function medium2_snake(){
-    positionX = positionX + 7.6;
-    positionY = positionY + 40;
-    p1.style.transform = `translate(${positionX}rem,${positionY}vh)`;
+    positionX = positionX + 7;
+    positionY = positionY + 14;
+    p1.style.transform = `translate(${positionX}rem,${positionY}rem)`;
     flag = false;
 }
